@@ -12,7 +12,6 @@ Các công nghệ chính sử dụng:
 # 2. Phân chia
 - **Giao diện**: Sử dụng chuyển đổi từng phần tử thiết kế (Figma) sang React.
 - *Xử lý logic game*: Sử dụng JavaScript với React và Redux.
-- **Cơ sở dữ liệu**: Sử dụng một dịch vụ lưu trữ dữ liệu (nếu cần thiết).
 
 # 3. Yêu cầu
 - Đầy đủ giao diện với các yếu tố tương tác.
