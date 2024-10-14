@@ -26,4 +26,5 @@ Các công nghệ chính sử dụng:
 - Ngôn ngữ sử dụng để viết code là tiếng Anh; commit là tiếng Việt.
 - Commit phải có ý nghĩa rõ ràng.
 - Sử dụng quy tắc đặt tên theo hướng dẫn để đảm bảo tính nhất quán.
-- Sử dụng quy tắc đặt tên: https://viblo.asia/p/naming-rules-cac-quy-tac-vang-trong-lang-dat-ten-ByEZkMXE5Q0
+- Sử dụng quy tắc đặt tên: [Hướng dẫn quy tắc đặt tên](https://viblo.asia/p/naming-rules-cac-quy-tac-vang-trong-lang-dat-ten-ByEZkMXE5Q0)
+
