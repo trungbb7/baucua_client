@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Pony";
+  src: url("../assets/Pony.ttf");
+}
+
+#BaiTapGameBauCua {
+  font-family: "Pony";
+  background-color: rgb(244, 246, 249);
+  min-height: 100vh;
+}
+
+#BaiTapGameBauCua h3,
+#BaiTapGameBauCua h1,
+#BaiTapGameBauCua h2 {
+  font-family: "Pony";
+}
+
+.scene {
+  width: 50px;
+  height: 50px;
+  /* margin-top: 80px; */
+  perspective: 50px;
+}
+
+.cube {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform infinite;
+  transform: translateZ(-25px);
+}
+
+.cube__face {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid yellow;
+  line-height: 40px;
+  font-size: 5px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.front {
+  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateZ(25px);
+}
+.right {
+  transform: rotateY(-90deg) rotateX(0deg) rotateZ(0deg) translateZ(25px);
+}
+.back {
+  transform: rotateY(180deg) rotateX(0deg) rotateZ(0deg) translateZ(25px);
+}
+.left {
+  transform: rotateY(90deg) rotateX(0deg) rotateZ(0deg) translateZ(25px);
+}
+.top {
+  transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) translateZ(25px);
+}
+.bottom {
+  transform: rotateX(-90deg) rotateY(0deg) rotate(0deg) translateZ(25px);
+}
+
+label {
+  margin-right: 10px;
+}
+
+.danhSachXucXac{
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #9aabbd;
+}
+.tienThuong{
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 5px;
+  color: white;
+  background-color: rgb(21 153 216);
+}
+@media (max-width: 768px) {
+  .danhSachXucXac{
+    width: 250px;
+   height: 250px;
+  }
+  .diemCuoc span{
+    font-size: 10px;
+  }
+  .diemCuoc button{
+    font-size: 10px;
+  }
+                    
+}
+@media (max-width: 576px) {
+  .titleGame{
+    font-size: 25px;
+  }
+  .danhSachXucXac{
+    width: 130px;
+   height: 130px;
+  }
+  .diemCuoc span{
+    font-size: 6px;
+  }
+  .diemCuoc button{
+    font-size: 6px;
+  }
+  
+  
+  .scene, .cube, .cube__face {
+    width: 30px;
+    height: 30px;
+  }  
+  .scene{
+    perspective:30px;
+  }    
+  .cube{
+    transform: translateZ(-15px);
+  }
+  .cube_face{
+    line-height: 0px;
+  }
+  .btnXoc{
+    font-size: 12px !important;
+  }
+  .datCuoc button{
+    padding: 3px 6px;
+  }
+  .datCuoc span{
+    font-size: 10px;
+  }
+}
