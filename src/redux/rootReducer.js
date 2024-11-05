@@ -1,3 +1,4 @@
+// Use redux
 import { combineReducers } from "redux";
 import GameBauCuaReducer from "./reducer/GameBauCuaReducer";
 
