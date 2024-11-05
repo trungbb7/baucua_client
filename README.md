@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 
 # Game Bầu Cua
+=======
+# Game Bầu Cua
+
+>>>>>>> e1eed5f437d71cf8e6530d5680530e94c68eef31
 # 1. Mở đầu
 Tổ chức nhóm gồm: 3 thành viên.
 
@@ -26,3 +31,7 @@ Các công nghệ chính sử dụng:
 - Commit phải có ý nghĩa rõ ràng.
 - Sử dụng quy tắc đặt tên theo hướng dẫn để đảm bảo tính nhất quán.
 - Sử dụng quy tắc đặt tên: [Hướng dẫn quy tắc đặt tên](https://viblo.asia/p/naming-rules-cac-quy-tac-vang-trong-lang-dat-ten-ByEZkMXE5Q0)
+<<<<<<< HEAD
+=======
+
+>>>>>>> e1eed5f437d71cf8e6530d5680530e94c68eef31
