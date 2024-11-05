@@ -1,26 +1,29 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDoorOpen } from '@fortawesome/free-solid-svg-icons';
 import './StartPage.css'; 
 
 function StartPage({ onStartGame }) {
 
-
- 
+  const handleExitGame = () => {
+    const confirmExit = window.confirm("Bạn có chắc chắn muốn thoát không?");
+    if (confirmExit) {
+      window.close(); 
+    }
+  };
 
   return (
     <div className="startPage">
       <img src="/img/gamebaucua/logo.png" alt="Game Bầu Cua Logo" className="logo" />
       <div className="buttonContainer">
         <button 
-         
+          onClick={onStartGame}
           className="button"
         >
           CHƠI
         </button>
         <button 
-          onClick={() => alert("Thoát game")} 
+          onClick={handleExitGame} 
           className="button"
         >
           <FontAwesomeIcon icon={faDoorOpen} className="icon" /> 

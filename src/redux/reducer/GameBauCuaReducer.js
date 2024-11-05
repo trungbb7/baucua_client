@@ -20,9 +20,6 @@ const initialState = {
 
 const GameBauCuaReducer = (state = initialState, action) => {
     switch (action.type) {
-<<<<<<< HEAD
-       
-=======
         case DAT_CUOC_BAU_CUA: {
             const danhSachCuocUpdate = [...state.danhSachCuoc];
             const index = danhSachCuocUpdate.findIndex(qc => qc.ma === action.qc.ma);
@@ -81,7 +78,6 @@ const GameBauCuaReducer = (state = initialState, action) => {
             });
             return {...state};
         }
->>>>>>> 21130438_Luan
         default:
             return { ...state }
     }
