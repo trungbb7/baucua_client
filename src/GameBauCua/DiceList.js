@@ -3,12 +3,14 @@ import { useDispatch, useSelector } from "react-redux";
 import Dice from "./Dice";
 import BetPoints from "./BetPoints";
 import UsernameInput from "./UsernameInput";
+
 import "./DiceList.css";
 import {
   PLAY_GAME_BAU_CUA,
   UPDATE_BALANCE,
 } from "../redux/constants/GameBauCuaActions";
 import removeVietnameseTones from "../utils/removeVietnameseTones";
+import { HOST } from "../utils/host";
 
 const INITIAL_DICE = [
   { ma: "bầu", hinhAnh: "./img/gamebaucua/bau.png" },
@@ -17,7 +19,7 @@ const INITIAL_DICE = [
 ];
 
 const NOTIFICATION_TIMEOUT = 3000;
-const API_BASE_URL = "http://localhost:3300/api/game";
+const API_BASE_URL = `${HOST}/api/game`;
 
 const DiceList = () => {
   const dispatch = useDispatch();

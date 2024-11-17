@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { UPDATE_BALANCE } from "../redux/constants/GameBauCuaActions";
+import { HOST } from "../utils/host";
 
 export default function BetPoints(props) {
   const { tienThuong } = useSelector((state) => state.GameBauCuaReducer);
@@ -15,18 +16,15 @@ export default function BetPoints(props) {
         return;
       }
 
-      const response = await fetch(
-        "http://localhost:3300/api/game/getBalance",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            username: username,
-          }),
-        }
-      );
+      const response = await fetch(`${HOST}/api/game/getBalance`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          username: username,
+        }),
+      });
 
       if (!response.ok) {
         throw new Error("Failed to fetch balance");
